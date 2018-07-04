@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,form,input,h1,p{padding:0; margin:0; border:0 ; }          /*重置浏览器的默认样式*/
+body{font-size:16px; font-family:"微软雅黑";
+
+background-image:url(../img/beijing.jpg) ;}
+div{ margin-left:200px;}
+                   /*全局控制*/
+.bg{ position:relative;
+ }                 /*设置相对定位*/
+form{
+	width: 800px;   /*使表单在浏览器中居中*/
+	padding-left: 4px;
+	position: absolute;         /*设置绝对定位*/
+	left: 458px;
+	top:0px;
+	border:#999;
+	
+}
+h2{
+	       /*控制标题*/
+	margin-left:50px;
+	margin:40px 0;
+	font-size:40px;
+	font-family:"微软雅黑";
+    color:#000;
+	font-weight: 600; 
+}     
+p{margin-top:15px;} /*设置上一框与下一框的距离*/
+p span{
+    width:80px;
+	display:inline-block;      /*将行内元素转换为行内块元素*/
+	text-align:right;
+	padding-right:10px;
+	
+}
+p input {
+	width:250px;
+    height:18px;
+	font-weight:bold;                                     
+	border:solid #CCC;
+    padding:2px;
+	border-radius:5px;
+	
+	padding-left:3PX;             /*设置输入框与输入内容之间拉开一些距离*/
+}
+
+.btn input{                                /*设置两个按钮的宽高、边距及边框样式*/
+	width: 150px; 
+    height: 40px; 
+    cursor :hand; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background-color:#006; 
+    font-family:"微软雅黑";
+	margin-left:45px;
+	border: 0px; 
+	border-radius:5px;                      /*设置圆角边框*/
+}

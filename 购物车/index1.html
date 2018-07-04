@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Keywords" content="关键词123">
+    <meta name="Description" content="描述">
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="public/css/base.css">
+    <!-- 引入base.css -->
+    <link rel="stylesheet" type="text/css" href="css/shortcut.css">
+    <!-- 头部导航 -->
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <!-- 头部搜索栏 -->
+    <link rel="stylesheet" type="text/css" href="./css/navjd.css" />
+    <!-- 文字导航，轮播图 -->
+    <link rel="stylesheet" type="text/css" href="./css/tab.css"/>
+    <!-- 选项卡 -->
+    <link href="css/myCart.css" type="text/css" rel="stylesheet" />
+    <!--购物车-->
+	<script type="text/javascript" src="js/myCart.js"></script>
+    <script src="public/js/jquery-3.1.1.js"></script>
+	<title>乐食农产品购物网</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+
+<div id="shortcut">
+	<div class="w">
+		<ul class="fl">
+		    <!-- 所在城市区块 -->
+			<li class="dropdown" id="ttbar-mycity">
+			    <div class="dt cw-icon">  
+			      <i class="iconfont"></i>	
+			      <span>广州</span>
+			    </div>
+			    <!-- 所在城市区块下拉菜单 -->
+			    <div class="dd dropdown-layer">
+			    	<div class="item"><a class="selected" href="">广州</a></div>
+			    	<div class="item"><a href="">上海</a></div>
+			    	<div class="item"><a href="">天津</a></div>
+			    	<div class="item"><a href="">重庆</a></div>
+			    	<div class="item"><a href="">河北</a></div>
+			    	<div class="item"><a href="">山西</a></div>
+			    	<div class="item"><a href="">河南</a></div>
+			    	<div class="item"><a href="">辽宁</a></div>
+			    	<div class="item"><a href="">吉林</a></div>
+			    	<div class="item"><a href="">黑龙江</a></div>
+			    	<div class="item"><a href="">内蒙古</a></div>
+			    	<div class="item"><a href="">江苏</a></div>
+			    	<div class="item"><a href="">山东</a></div>
+			    	<div class="item"><a href="">安徽</a></div>
+			    	<div class="item"><a href="">浙江</a></div>
+			    	<div class="item"><a href="">福建</a></div>
+			    	<div class="item"><a href="">湖北</a></div>
+			    	<div class="item"><a href="">湖南</a></div>
+			    	<div class="item"><a href="">广东</a></div>
+			    	<div class="item"><a href="">广西</a></div>
+			    	<div class="item"><a href="">江西</a></div>
+			    	<div class="item"><a href="">四川</a></div>
+			    	<div class="item"><a href="">海南</a></div>
+			    	<div class="item"><a href="">贵州</a></div>
+			    	<div class="item"><a href="">云南</a></div>
+			    	<div class="item"><a href="">西藏</a></div>
+			    	<div class="item"><a href="">陕西</a></div>
+			    	<div class="item"><a href="">甘肃</a></div>
+			    	<div class="item"><a href="">青海</a></div>
+			    	<div class="item"><a href="">宁夏</a></div>
+			    	<div class="item"><a href="">新疆</a></div>
+			    	<div class="item"><a href="">港澳</a></div>
+			    	<div class="item"><a href="">台湾</a></div>
+			    	<div class="item"><a href="">钓鱼岛</a></div>
+			    	<div class="item"><a href="">海外</a></div>
+			    </div>
+
+			</li>
+		</ul>
+		<!-- 导航栏右侧 -->
+		<ul class="fr">
+			<li id="ttbar-login">
+			  <a href="../登录注册等/00000.html" class="link-login">您好 , 请登录 </a>
+			  <a href="../登录注册等/0000.html" class="link-regist">免费注册</a>
+			</li>
+			<li class="spacer"></li>
+			<li><div class="dt"><a href="">我的订单</a></div> </li>
+			<li class="spacer"></li>
+			<li id="ttbar-myjd" class="dropdown">
+			 <div class="dt cw-icon">
+			    <a href="">我的购物车</a>
+			    <i class="iconfont"></i>
+			    <!-- 我的京东下拉菜单 开始-->
+			    <div class="dd dropdown-layer">
+			    	<div class="userinfo">
+			    		<div class="u-pic">
+			    			<a href="">
+			    			   <img src="picture/shortcut/user.jpg" alt="" width="60px" height="60px">
+			    			</a>
+			    		</div>
+			    		<div class="u-name u-login">
+			    			<a href="../登录注册等/00000.html">你好，请登录</a>
+			    		</div>
+			    	    <div class="u-extra">
+			    		    <a href="">优惠券<span></span></a>
+			    		    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			    		    <a href="">消息<span></span></a>					
+			    	    </div>
+			    	</div>
+			    	<!-- userinfo end -->
+			    	<div class="otherlist">
+			    	  <div class="fore1">
+			    		<div class="item"><a href="">待处理订单<span></span></a></div>
+			    		<div class="item"><a href="">我的问答<span></span></a></div>
+			    		<div class="item"><a href="">降价商品<span></span></a></div>
+			    		<div class="item"><a href="">返/退换货<span></span></a></div>
+			    	  </div>
+			    	  <div class="fore2">
+			    		<div class="item"><a href="">我的关注<span></span></a></div>
+			    		<div class="item"><a href="">我的购物豆<span></span></a></div>
+			    		<div class="item"><a href="">我的理财<span></span></a></div>
+			    		<div class="item"><a href="">我的白条<span></span></a></div>
+			    	  </div>
+			    	</div>
+			    	<!-- otherlist结束 -->
+			    </div>
+                 <!-- dd end 下拉菜单结束 -->
+			 </div>
+			  <!-- dt end控制左右边距 结束-->
+			</li>
+			<li class="spacer"></li>
+			<li><div class="dt"><a href="">乐食会员</a></div></li>
+			<li class="spacer"></li>
+			<li><div class="dt"><a href="">企业采购</a></div></li>
+			<li class="spacer"></li>
+			<li id="ttbar-serv" class="dropdown">
+			  <div class="dt cw-icon">
+			    <a href="">客户服务</a>
+			    <i class="iconfont"></i>
+			    <div class="dd dropdown-layer">
+			       <div class="item-client">客户</div>
+			       <div class="item"><a href="">帮助中心</a></div>
+			       <div class="item"><a href="">售后服务</a></div>
+			       <div class="item"><a href="">在线客服</a></div>
+			       <div class="item"><a href="">电话客服</a></div>
+			       <div class="item"><a href="">意见建议</a></div>
+			       <div class="item"><a href="">客服邮箱</a></div>
+			       <div class="item fn-clear"><a href="">金融咨询</a></div>
+			       <div class="item-business">商户</div>
+			       <div class="item"><a href="">乐食商学院</a></div>
+			       <div class="item"><a href="">商家入驻</a></div>
+
+			    </div>
+			  </div>
+			</li>
+			<li class="spacer"></li>
+			<li class="dropdown" id="ttbar-navs">
+			  <div class="dt cw-icon">
+			    <a href="">网站导航</a>
+			    <i class="iconfont"></i>
+			    <div class="dd dropdown-layer">
+			      <dl class="fore1">
+			      	<dt>特色主题</dt>
+			      	<dd>
+			      		<div class="item"><a href="">水果街</a></div>
+			      		<div class="item"><a href="">好物100</a></div>
+			      		<div class="item"><a href="">乐食农预售</a></div>
+			      		<div class="item"><a href="">尖er货</a></div>
+			      		<div class="item"><a href="">乐食首发</a></div>
+			      		<div class="item"><a href="">今日团购</a></div>
+			      		<div class="item"><a href="">优惠券</a></div>
+			      		<div class="item"><a href="">闪购</a></div>
+			      		<div class="item"><a href="">乐食会员</a></div>
+			      		<div class="item"><a href="">秒杀</a></div>
+			      		<div class="item"><a href="">定期送</a></div>
+			      		<div class="item"><a href="">新奇特</a></div>
+			      		<div class="item"><a href="">乐食试用</a></div>
+			      		<div class="item"><a href="">礼品购</a></div>
+			      		<div class="item"><a href="">乐食馆</a></div>
+			      		<div class="item"><a href="">乐食日报</a></div>
+			      		<div class="item"><a href="">进口</a></div>
+			      		<div class="item"><a href="">乐食老字号</a></div>
+			      		<div class="item"><a href="">买什么</a></div>
+			      	</dd>
+			      </dl>
+			      <dl class="fore2">
+			      	<dt>农行频道</dt>
+			      	<dd>
+			      		<div class="item"><a href="">水产品城</a></div>
+			      		<div class="item"><a href="">美食馆</a></div>
+			      		<div class="item"><a href="">农资频道</a></div>
+			      		<div class="item"><a href="">乐食智能</a></div>
+			      	</dd>
+			      </dl>
+			      <dl class="fore3">
+			      	<dt>乐食服务</dt>
+			      	<dd>
+			      		<div class="item"><a href="">乐食众筹</a></div>
+			      		<div class="item"><a href="">白条</a></div>
+			      		<div class="item"><a href="">乐食金融APP</a></div>
+			      		<div class="item"><a href="">乐食小金库</a></div>
+			      		<div class="item"><a href="">乐食到家</a></div>
+			      		<div class="item"><a href="">乐食微联</a></div>
+			      		<div class="item"><a href="">乐食众测</a></div>
+			      	</dd>
+			      </dl>
+			      <dl class="fore4">
+			      	<dt>更多精选</dt>
+			      	<dd>
+			      		<div class="item"><a href="">乐食社区</a></div>
+			      		<div class="item"><a href="">乐食通信</a></div>
+			      		<div class="item"><a href="">乐食E卡</a></div>
+			      		<div class="item"><a href="">乐食社区</a></div>
+			      		<div class="item"><a href="">乐友邦</a></div>
+			      		<div class="item"><a href="">卖家入驻</a></div>
+			      		<div class="item"><a href="">企业采购</a></div>
+			      		<div class="item"><a href="">English Site</a></div>
+			      	</dd>
+			      </dl>
+
+			    </div>
+			  </div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- 头部页面开始 -->
+<div id="header">
+	<div class="w">
+		<div class="logo logo_tit_lk" id="logo">	
+		</div>
+        <div style="position: absolute; font-size: 50px; color: #339900; font-family: '华文仿宋'; left: 124px; top: 64px;"><strong>乐食</strong></div>
+        <!-- 搜索框BEGIN -->
+		<div id="search" class="">
+		    <div class="search-m">
+		      <div class="search_logo">
+		      	<a href="" class="search_logo_lk"></a>
+		      </div>
+			  <div class="form">
+			    <input type="" name="" class="text" style="color: rgb(153,153,153);" value="橘子">
+			    <button class="button">	
+			       <i class="iconfont"><img src="picture/shortcut/search.png" alt="" width="30px" height="30px"></i>
+			    </button>
+			  </div>
+			</div>
+		</div>
+		<!-- 搜索框结束 -->
+		<!-- 购物车开始 -->
+		<div id="settleup" class="dropdown">
+			<div class="cw-icon">
+                 <i class="ci-right">  </i>
+                 <i class="ci-count" id="shopping-amount">0</i>
+                 <i class="iconfont"></i>
+				 <a href="">我的购物车</a>
+			</div>
+			<div class="dropdown-layer">
+				<div class="prompt">
+					<div class="nogoods">
+						<b></b>
+						"购物车中还没有商品，赶紧选购吧！"
+					</div>
+				</div>
+			</div>
+			<!-- 购物车下拉菜单结束 -->
+		</div>
+		<!-- 购物车结束 -->
+        <div id="hotwords">
+			<a href="">199减100</a>
+			<a href="">天山雪梨</a>
+			<a href="">糖心苹果</a>
+			<a href="">每五百减60</a>
+			<a href="">海产爆品</a>
+			<a href="">深海鲜虾</a>
+		</div>
+		<!-- 文字导航开始 -->
+		<div id="navitems">
+			<ul f>
+				<li><a href="../乐食农产品官网主页/index.html">首页</a></li>
+				<li><a href="">咨讯</a></li>
+				<li><a href="">求购</a></li>
+				<li><a href="">展会</a></li>
+			</ul>
+			<div class="spacer"></div>
+			<ul>
+				<li><a href="">交易中心</a></li>
+				<li><a href="">国际频道</a></li>
+		  </ul>
+			<div class="spacer"></div>
+			<ul>
+				<li><a href="">乐食金融</a></li>
+                <li><a href="">联系我们</a></li>
+			</ul>
+		</div>
+		<!-- 文字导航结束 -->
+	</div>
+</div>
+<!-- 头部页面完成 -->
+
+  <!-- 右侧楼梯导航开始开始 -->
+<div class="J-global-toobal">
+ <div class="jdm_toobar_wrap">
+    <div class="jdm_toobar">
+		<div class="jdm_toolbar_tabs">
+			<div id="toolbarvip" class="jdm_toolbar_tab jdm_toolbar_tab_jdvip" >
+				<i class="tab_tip"></i>
+				<i class="tab_ico"></i>
+				<em class="tab_text"><a href="">乐食会员</a></em>
+				<span class="tab_sup hide">0</span>
+			
+	 		    <div class="tabs_tip hide">
+				<span class="ico"></span>
+				<span class="text">成功加入购物车</span>
+				<b></b>
+	  		  </div>
+	  		</div>
+			<div class="jdm_toolbar_tab jdm_toolbar_tab_cart">
+			    <i class="tab_ico"></i>
+				<em class="tab_text"><a href="index1.html">购物车</a></em>
+			</div>
+			<div class="jdm_toolbar_tab jdm_toolbar_tab_follow">
+				<em class="tab_text"><a href="">我的关注</a></em>
+				<i class="tab_ico"></i>
+			</div>
+			<div class="jdm_toolbar_tab jdm_toolbar_tab_history">
+				<em class="tab_text"><a href="">我的足迹</a></em>
+				<i class="tab_ico"></i>
+			</div>
+			<div class="jdm_toolbar_tab jdm_toolbar_tab_message">
+				<em class="tab_text"><a href="">我的消息</a></em>
+				<i class="tab_ico"></i>
+			</div>
+			<div class="jdm_toolbar_tab jdm_toolbar_tab_jimi">
+				<em class="tab_text"><a href="">咨询客服</a></em>
+				<i class="tab_ico"></i>
+			</div>
+		</div>
+		<div class="jdm_toolbar_footer">
+		    <div class="jdm_toolbar_tab jdm_toolbar_tab_top">
+		    	<em class="tab_text"><a href="">顶部</a></em>
+		    	<i class="tab_ico"></i>
+		    </div>
+			<div class="jdm_toolbar_tab jdm_toolbar_tab_feedback">
+				<em class="tab_text"><a href="../联系我们/Contact.html">反馈</a></em>
+				<i class="tab_ico"></i>
+			</div>
+			<div class=" jdm_toolbar_tab_survey">
+			  <em class="tab_text">无奖<br>活动</em>
+			</div>
+		</div>
+    </div>
+ </div>
+</div>	
+  <!-- 右侧楼梯导航结束 -->
+
+  <!-- 左侧浮动条开始 -->
+<div class="lift">
+	 <ul clsss="lift_list">
+		<li class="lift_item lift_item_first active"><a href="javascript:;" class="lift_btn"><span>享品质</span></a></li>
+	<!--&#xe606;--></i></a></li>
+	</ul>			
+</div>
+  <!-- 左侧浮动条结束 -->
+<!-- 粗略写整体页面开始   -->
+
+  	<style type="text/css">
+	.jdbody{
+		width:1190px;
+  		margin:0 auto;
+  	}
+  	.jdbody ul{
+  		padding-bottom: 20px;
+  	}
+	</style>
+
+ 
+
+  <!-- 粗略写整体页面结束 -->
+
+<script src="js/shortcut.js"></script>
+<script src="public/js/banner.js"></script>
+<script type="text/javascript">
+//*****************左侧导航***************//
+var cate = $(".cate");
+var num = $(".cate .cate_menu li").length;
+var oleftli = $(".cate .cate_menu li");//显示区块
+var ofloatli = $(".navfloat ul li");//隐藏区块
+bannerplay(cate,ofloatli,oleftli,15,false,1);
+//***************中间轮播图************//
+var slider_main = $(".slider_main");
+var picli = $(".slider_main .picban li");
+var lilen = picli.length;
+var leftbtn = $(".slider_main .left");
+var rightbtn = $(".slider_main .right");
+for(var i=1;i<=lilen;i++){	//创建图片个数相对应的底部数字个数
+	var li="<li>"+i+"</li>";	//创建li标签，并插入到页面中
+	$(".slider_main .num_btn").append(li);
+}	
+var numli = $(".slider_main .num_btn li")
+bannerplay(slider_main,picli,numli,lilen,true,0,leftbtn,rightbtn);
+//右侧选项卡
+bannerplay($(".mod_tab_head"),$(".mod_tab_content_item"),$(".mod_tab_head_item"),2,false,2);
+
+//*****************左侧楼梯导航*******************//
+$(".lift ul li").click(function(){
+	//alert("dianji ");
+	var index = $(this).index();
+	//让滚动条移动到对应页面位置
+	var topslide = $(".floor").eq(index).offset().top;
+	$("html,body").animate({"scrollTop":topslide},1000);
+	
+})
+//滚动条事件
+$(window).scroll(function(){
+	var topslide = $(window).scrollTop();
+	$(".floor").each(function(i){
+		if(topslide >=$(this).offset().top){
+			$(".lift ul li").eq(i).addClass("active").siblings().removeClass("active");
+		}
+	})
+	//显示楼梯导航
+	if(topslide>1600){
+		$(".lift").show();
+	}else{
+		$(".lift").hide();
+	}
+	//显示搜索栏
+	if(topslide>660){
+		$("#search").addClass("search-fix");
+	}else{
+		$("#search").removeClass("search-fix");
+	}
+})
+ // $(document).mousemove(function(e){   //显示鼠标位置
+ // console.log("X: " + e.pageX + ", Y: " + e.pageY);});
+  
+</script>
+<div id="kongwei"></div>
+<hr size="3" color="#666666"></hr>
+<div id="nav">
+  <p>您的位置：<a href="../乐食农产品官网主页/index.html">首页</a> > <a href="#">我的农产品</a> > 我的购物车</p>
+</div>
+<div id="navlist">
+	<ul>
+		<li class="yellow"></li> 
+		<li class="navlist_red">1. 查看购物车</li> 
+    	<li class="navlist_red_arrow"></li>
+    	<li class="navlist_gray">2. 确认订单信息</li> 
+    	<li class="navlist_gray_arrow"></li> 
+        <li class="navlist_gray">3. 付款到银联</li> 
+    	<li class="navlist_gray_arrow"></li>   
+     	<li class="navlist_gray">4. 确认收货</li> 
+    	<li class="navlist_gray_arrow"></li> 
+    	<li class="navlist_gray">5. 评价</li> 
+    	<li class="navlist_gray_right"></li>   
+  	</ul>
+</div>
+
+<div id="content">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" id="shopping">
+    <form action="" method="post" name="myform">
+  	<tr>
+    	<td class="title_1"><input id="allCheckBox" type="checkbox" value="" onclick="selectAll()" />全选</td>
+    	<td class="title_2" colspan="2">商品名称</td>
+    	<td class="title_4">单价（元）</td>
+    	<td class="title_5">数量</td>
+    	<td class="title_6">小计（元）</td>
+    	<td class="title_7">操作</td>
+  	</tr>
+    <tr>
+    	<td colspan="8" class="line"></td>
+  	</tr>
+    <tr>
+    	<td colspan="8" class="shopInfo">供销商：<a href="#">广东梅州苹果供销商</a></td>
+  	</tr>
+   	<tr id="product1">
+		<td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></td>
+    	<td class="cart_td_2"><img src="picture/fruits/pg.jpg" alt="shopping" width="120"/></td>
+    	<td class="cart_td_3"><a href="#">苹果</a><br />
+    		上市时间：2016年9月   品质：优良 <br />
+        	信用：良好</td>
+    
+    	<td class="cart_td_5">20.00</td>
+    	<td class="cart_td_6"><img src="images/minus.jpg" alt="minus" onclick="changeNum('num_1','minus')" class="hand"/> <input id="num_1" type="text"  value="1" class="num_input" readonly/> <img src="images/adding.jpg" alt="add" onclick="changeNum('num_1','add')"  class="hand"/></td>
+    	<td class="cart_td_7"></td>
+    	<td class="cart_td_8"><a href="javascript:deleteRow('product1');">删除</a></td>
+  	</tr>
+  
+  	<tr>
+    	<td colspan="8" class="shopInfo">供销商：<a href="#">广东汕头</a></td>
+  	</tr>
+   	<tr id="product2">
+    	<td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product2" onclick="selectSingle()" /></td>
+    	<td class="cart_td_2"><img src="picture/grain/大米.jpg" alt="shopping" width="120"/></td>
+    	<td class="cart_td_3"><a href="#">大米</a><br />
+        	上市时间：2016年9月 品质： 优良<br />
+        	信用：良好</td>
+   		<td class="cart_td_5">50.00</td>
+    	<td class="cart_td_6"><img src="images/minus.jpg" alt="minus" onclick="changeNum('num_2','minus')" class="hand"/> <input id="num_2" type="text"  value="1" class="num_input" readonly/> <img src="images/adding.jpg" alt="add" onclick="changeNum('num_2','add')"  class="hand"/></td>
+    	<td class="cart_td_7"></td>
+    	<td class="cart_td_8"><a href="javascript:deleteRow('product2');">删除</a></td>
+  	</tr>
+  
+   	<tr>
+    	<td colspan="8" class="shopInfo">供销商：<a href="#">海南</a></td>
+  	</tr>
+   	<tr id="product3">
+    	<td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product3"  onclick="selectSingle()"/></td>
+    	<td class="cart_td_2"><img src="picture/fruits/li.jpg" alt="shopping" width="120"/></td>
+    	<td class="cart_td_3"><a href="#">香梨</a><br />
+        	上市时间：2016年9月 品质： 优良<br />
+        	信用：良好</td>
+   		<td class="cart_td_5">35.00</td>
+    	<td class="cart_td_6"><img src="images/minus.jpg" alt="minus" onclick="changeNum('num_3','minus')" class="hand"/> <input id="num_3" type="text"  value="1" class="num_input" readonly/> <img src="images/adding.jpg" alt="add" onclick="changeNum('num_3','add')"  class="hand"/></td>
+    	<td class="cart_td_7"></td>
+    	<td class="cart_td_8"><a href="javascript:deleteRow('product3');">删除</a></td>
+  	</tr>
+    
+  	<tr>
+    	<td colspan="8" class="shopInfo">供销商：江西</td>
+  	</tr>
+   	<tr id="product4">
+    	<td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product4" onclick="selectSingle()" /></td>
+    	<td class="cart_td_2"><img src="picture/grain/玉米.jpg" alt="shopping" width="120"/></td>
+    	<td class="cart_td_3"><a href="#">玉米</a><br />
+        	上市时间：2016年9月 品质： 优良<br />
+        	信用：良好</td>
+    	<td class="cart_td_5">60.00</td>
+    	<td class="cart_td_6"><img src="images/minus.jpg" alt="minus" onclick="changeNum('num_4','minus')" class="hand"/> <input id="num_4" type="text"  value="2" class="num_input" readonly/> <img src="images/adding.jpg" alt="add" onclick="changeNum('num_4','add')"  class="hand"/></td>
+    	<td class="cart_td_7"></td>
+    	<td class="cart_td_8"><a href="javascript:deleteRow('product4');">删除</a></td>
+  	</tr>
+  
+   	<tr>
+   		<td  colspan="3"><a href="javascript:deleteSelectRow()"><img src="images/del.jpg" alt="delete"/></a></td>
+    	<td colspan="5" class="shopend">商品总价（不含运费）：
+    	  <label id="total" class="yellow"></label> 元<br />
+    	<a href="index2.html"><img src="images/subtn.png"></a></td>
+  	</tr>
+  	</form>
+	</table>
+</div>  
+<div align="center" ><br />
+<ul>
+  <a>网站首页</a> | <a>关于我们</a> | <a>联系方式</a> | <a>使用协议</a> | <a>版权隐私</a>| <a>网站地图</a>| <a>网站留言</a> | <a>广告服务</a> | <a>积分换礼</a>   | <a>手机版</a> | <a>RSS订阅</a>
+
+
+</ul>
+
+<ul>
+版权所有：乐食农产品网 Copyright © 2008-2016 www.nongnet.com All Rights Reserved 
+</ul>
+</div>        
+</body>
+</html>
